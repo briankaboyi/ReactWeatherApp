@@ -1,0 +1,98 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+}
+
+.Side {
+  display: none;
+  box-sizing: border-box;
+  padding: 50px 0px;
+
+  justify-content: space-between;
+  align-items: center;
+  background: #6a6f78ce;
+  backdrop-filter: blur(5px);
+}
+.Side,
+.locations,
+.details {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Side,
+.locations,
+.details,
+.locations div,
+.details div {
+  justify-content: space-between;
+}
+.Side,
+.search,
+.locations,
+.details,
+.locations,
+.location-1,
+.location-2,
+.location-3,
+.details,
+.detail-1,
+.detail-2,
+.detail-3 {
+  display: flex;
+}
+.search,
+hr {
+  width: 80%;
+}
+.locations,
+.details,
+h1 {
+  width: 65%;
+}
+.locations,
+.details {
+  flex-basis: 25%;
+}
+.locations p,
+.details p,
+.dearch input {
+  font-size: 16px;
+}
+h1 {
+  font-size: 16px;
+  text-align: left;
+}
+/* SEARCH */
+.search {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0px 30px;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 50px;
+  background: rgb(136, 136, 136);
+  color: #f3f3f3;
+}
+input {
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+input::placeholder {
+  color: #f3f3f3;
+}
+.search-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.details .detail-1 p {
+  font-weight: bold;
+}
+hr {
+  color: rgba(255, 255, 255, 0.575);
+}

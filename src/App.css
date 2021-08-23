@@ -1,38 +1,74 @@
+* {
+  color: #f3f3f3;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Ubuntu" "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+
+  animation: bg ease-in-out infinite 60s;
+  transition: background ease-in-out 3s;
+}
+.Clear,
+.Clouds,
+.Mist,
+.Snow,
+.Rain,
+.Thunderstorm {
+  background-size: cover;
+  transition: background ease-in-out 3s;
+}
+.Clear {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(./assets/Clear.jpg);
+  background-position: center;
+}
+.Clouds {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(./assets/Clouds.jpg);
+}
+.Mist {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(./assets/Mist.jpg);
+}
+.Rain {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(./assets/Rain.jpg);
+}
+.Snow {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(./assets/Snow.jpg);
+  background-position: center;
+}
+.Thunderstorm {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(./assets/Thunderstorm.jpg);
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Main {
+  width: 65vw;
+}
+.Side {
+  width: 35vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bg {
+  0% {
+    background-size: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    background-size: 104%;
+  }
+  50% {
+    background-size: 105%;
+  }
+  609% {
+    background-size: 104%;
+  }
+  100% {
+    background-size: 100%;
   }
 }
