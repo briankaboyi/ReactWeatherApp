@@ -5,7 +5,7 @@ import Side from "./components/Side";
 // brayojava key
 const api = {
   key: "6b6dc93045f18431ea29a37236b08033",
-  base: "http://api.openweathermap.org/data/2.5/",
+  base: "https://api.openweathermap.org/data/2.5/",
 };
 function App() {
   const [count, setCount] = useState(0);
