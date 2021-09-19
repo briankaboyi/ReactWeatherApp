@@ -5,20 +5,20 @@ import Side from "./components/Side";
 // brayojava key
 const api = {
   key: "6b6dc93045f18431ea29a37236b08033",
-  base: "http://api.openweathermap.org/data/2.5/",
+  base: "https://api.openweathermap.org/data/2.5/",
 };
 function App() {
   const [count, setCount] = useState(0);
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({
-    name: "Nairobi",
+    name: "City",
     main: {
-      temp: 16,
-      humidity: 54,
+      temp: 0,
+      humidity: 0,
     },
-    weather: [{ description: "Clear sky", main: "Clouds" }],
-    wind: { speed: 56 },
-    sys: { country: "KE" },
+    weather: [{ description: "Description", main: "Mist" }],
+    wind: { speed: 0 },
+    sys: { country: "CO" },
   });
 
   const search = (evt) => {
@@ -59,3 +59,9 @@ function App() {
 }
 
 export default App;
+// .Clear,
+// .Clouds,
+// .Mist,
+// .Snow,
+// .Rain,
+// .Thunderstorm

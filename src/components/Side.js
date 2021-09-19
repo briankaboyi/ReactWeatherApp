@@ -7,7 +7,7 @@ function Side(props) {
       <div className="search">
         <input
           type="text"
-          placeholder="Add Location"
+          placeholder="Search Location"
           onChange={props.handleQuery}
           onKeyPress={props.handleChange}
         />

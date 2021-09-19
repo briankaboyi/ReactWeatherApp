@@ -1,9 +1,14 @@
 * {
   font-family: "Ubuntu";
 }
+html,
+body {
+  height: 100vh;
+}
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

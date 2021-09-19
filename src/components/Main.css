@@ -15,7 +15,7 @@
   font-size: 20px;
 }
 .overview {
-  width: 85%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2fr 1fr 0.5fr;
@@ -37,7 +37,7 @@
   grid-column: 1/2;
   grid-row: 2/3;
 
-  font-size: 36px;
+  font-size: 28px;
   align-self: center;
 }
 .date {
@@ -55,11 +55,105 @@ img {
 .weather {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-size: 36px;
+  font-size: 28px;
   align-self: center;
 }
 .weather-description {
   grid-column: 2/3;
   grid-row: 3/4;
   font-size: 18px;
+}
+
+@media screen and (max-width: 770px) {
+  .overview {
+    gap: 15px 20px;
+  }
+  .logo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .temp {
+    font-size: 100px;
+  }
+  .temp .dot {
+    top: -30px;
+    font-size: 60px;
+  }
+  .location,
+  .weather {
+    font-size: 26px;
+  }
+  .date,
+  .weather-description {
+    font-size: 16px;
+  }
+  img {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Main {
+    padding: 0px;
+  }
+  .logo,
+  .weather-description {
+    display: none;
+  }
+  .overview {
+    width: 60%;
+    align-self: center;
+    align-items: center;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    gap: 10px 40px;
+  }
+  .temp {
+    font-size: 70px;
+    grid-row: 2/3;
+  }
+  .temp .dot {
+    font-size: 30px;
+  }
+  img {
+    justify-self: end;
+
+    height: 70px;
+    grid-row: 2/3;
+  }
+  .location,
+  .weather {
+    font-size: 22px;
+    grid-row: 3/4;
+  }
+
+  .weather {
+    justify-self: end;
+  }
+  .date {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .overview {
+    gap: 30px 10px;
+  }
+  .temp {
+    font-size: 50px;
+    left: 0px;
+  }
+  .temp .dot {
+    font-size: 20px;
+  }
+  img {
+    height: 50px;
+  }
+  .location,
+  .weather {
+    font-size: 18px;
+  }
+  .date {
+    font-size: 14px;
+  }
 }
